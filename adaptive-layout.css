@@ -1,0 +1,134 @@
+/* Mobile View display points  at 320px*/
+.container { 
+    width: 320px; 
+    margin: 0 auto; 
+}
+.lead-text { 
+    width: 300px;
+}
+.hamburger { 
+    display: flex; 
+    margin-left: auto; 
+    cursor: pointer;
+    flex-direction: column;
+    gap: 6px;
+    z-index: 1001;
+}
+.site-nav { 
+    position: absolute; 
+    top: var(--header-height); 
+    left: -100%; 
+    width: 100%; 
+    background-color: var(--color-dark); 
+    transition: 0.4s ease-in-out; 
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    padding: 30px 0;
+    z-index: 1000;
+}
+.site-nav.active {
+    left: 0;
+}
+.site-nav ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 0;
+    margin-bottom: 20px;
+}
+.site-nav .nav-btn {
+    margin: 0 auto;
+}
+.content-split { 
+    display: flex; 
+    flex-direction: column; 
+    width: 320px; 
+    gap: 20px; 
+}
+/* inside elements take 100% of the fixed 320px container for padding */
+.menu-wrapper, 
+.specials-wrapper { 
+    width: 100%; 
+}
+.menu-grid, 
+.form-group, 
+.footer-grid { 
+    display: grid; 
+    grid-template-columns: 100%; 
+    gap: 20px; 
+}
+/* TABLET breakpoint at 768px */
+@media screen and (min-width: 768px) {
+    .container { 
+        width: 720px; 
+    }
+    .lead-text { 
+        width: 650px;
+    }
+    .hamburger { 
+        display: none; 
+    }
+    .site-nav { 
+        display: flex;
+        position: static;
+        flex-direction: row;
+        background-color: transparent;
+        padding: 0;
+        width: auto;
+    }
+    .site-nav ul {
+        flex-direction: row;
+        margin-bottom: 0;
+    }
+    .site-nav .nav-btn {
+        margin-left: 20px;
+    }
+    .content-split { 
+        flex-direction: row; 
+        width: 720px; 
+    }
+    .menu-wrapper { 
+        width: 450px; 
+    }
+    .specials-wrapper { 
+        width: 250px; 
+    }
+    .menu-grid { 
+        grid-template-columns: 215px 215px; 
+    }
+    .form-group { 
+        grid-template-columns: 300px 300px;
+    }
+    .footer-grid { 
+        grid-template-columns: 240px 220px 220px;
+    }
+}
+/* DESKTOP breakpoint at 1024px */
+@media screen and (min-width: 1024px) {
+    .container { 
+        width: 1024px; 
+    }
+    .lead-text { 
+        width: 800px;
+    }
+    .content-split { 
+        width: 1024px; 
+    }
+    .menu-wrapper { 
+        width: 684px; 
+    }
+    .specials-wrapper { 
+        width: 320px; 
+    }
+    .menu-grid { 
+        grid-template-columns: 332px 332px; 
+    }
+    .form-group { 
+        grid-template-columns: 452px 452px;
+    }
+    .footer-grid { 
+        grid-template-columns: 424px 280px 280px;
+    }
+}

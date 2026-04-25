@@ -1,0 +1,45 @@
+/* FLUID layout- Percentages, No max-widths or breakpoints. */
+.container { 
+    width: 90%; 
+    margin: 0 auto; 
+}
+.site-header { 
+    width: 100%; 
+}
+.hamburger { 
+    display: none; 
+}
+.site-nav { 
+    display: flex; 
+}
+.content-split { 
+    display: flex; 
+    flex-direction: row; 
+    width: 100%; 
+    gap: 4%; 
+}
+.lead-text {
+    max-width: 100%;
+}
+.menu-wrapper { 
+    width: 62%; 
+}
+.specials-wrapper { 
+    width: 34%; 
+}
+/* Grids use percentages to stretch or shrink */
+.menu-grid { 
+    display: grid; 
+    grid-template-columns: 48% 48%; 
+    gap: 4%; 
+}
+.form-group { 
+    display: grid; 
+    grid-template-columns: 48% 48%; 
+    gap: 4%; 
+}
+.footer-grid { 
+    display: grid; 
+    grid-template-columns: 40% 25% 25%; 
+    gap: 5%; 
+}

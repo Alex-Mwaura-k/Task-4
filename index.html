@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/img/favicon.ico" type="image/x-icon">
+    <title>Task 4 - Lexcy Restaurant</title>
+    <link rel="stylesheet" href="styles-global.css">
+    <!-- <link rel="stylesheet" href="/fixed-layout.css"> -->
+    <!-- <link rel="stylesheet" href="/fluid-layout.css"> -->
+    <link rel="stylesheet" href="/adaptive-layout.css">
+    <!-- <link rel="stylesheet" href="/responsive-layout.css"> -->
+</head>
+<body>
+    <header class="site-header">
+        <div class="container header-container">
+            <a href="#home" class="logo">Lexcy<span>.</span></a>
+<!-- hamburger menu -->
+            <div class="hamburger" id="hamburger" aria-label="Toggle Navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+<!-- navigation links -->
+            <nav class="site-nav" id="nav-links">
+                <ul class="nav-center-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#menu-specials">Menu</a></li>
+                </ul>
+                <a href="#reservations" class="btn-outline nav-btn">Book a Table</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+<!-- hero image section - call to action button -->
+        <section id="home" class="hero">
+            <div class="container hero-content">
+                <span class="subtitle">Experience the extraordinary</span>
+                <h1>A Taste of Modern Elegance</h1>
+                <p>Farm-to-table dining elevated with contemporary culinary techniques.</p>
+                <a href="#reservations" class="btn-solid">Reserve Your Table</a>
+            </div>
+        </section>
+<!-- About Us -->
+        <section id="about" class="about-section">
+            <div class="container text-center">
+                <h2>Our Culinary Philosophy</h2>
+                <p class="lead-text">At Lexcy Restaurant, we believe that exceptional food starts with exceptional ingredients. Our head chef partners closely with local artisans and sustainable farms to bring you a menu that is both seasonally inspired and deeply comforting.</p>
+            </div>
+        </section>
+<!-- Our Available Dishes- the menu section -->
+        <section id="menu-specials" class="menu-specials-section">
+            <div class="container content-split">
+                
+                <div class="menu-wrapper">
+                    <h2>Our Menu</h2>
+                    <div class="menu-grid">
+                        
+                        <article class="menu-card">
+                            <img src="/img/menu/pilau.jpg" alt="Pilau" class="menu-img">
+                            <div class="menu-card-body">
+                                <div class="menu-card-header">
+                                    <h3>Pilau</h3>
+                                    <span class="price">Ksh 1,500</span>
+                                </div>
+                                <p>The best of swahili dishes served with a side of traditional vegetables to complement the flavors.</p>
+                            </div>
+                        </article>
+
+                        <article class="menu-card">
+                            <img src="/img/menu/chocolate_strawberry_icecream.jpg" alt="Chocolate Strawberry Ice Cream" class="menu-img">
+                            <div class="menu-card-body">
+                                <div class="menu-card-header">
+                                    <h3>Ice Cream</h3>
+                                    <span class="price">Ksh 800</span>
+                                </div>
+                                <p>Delicious chocolate icecream with a touch of strawberry flavor with a creamy texture, get 5 for Ksh 3,500</p>
+                            </div>
+                        </article>
+
+                    </div>
+                </div>
+<!-- Special Dish -->
+                <aside class="specials-wrapper">
+                    <h2>Today's Special</h2>
+                    <div class="special-card">
+                        <div class="special-badge">Chef's Highlight</div>
+                        <img src="/img/menu/nyama_choma.jpg" alt="Nyama Choma beef" class="scalable-media">
+                        <div class="special-card-body">
+                            <h3>Nyama Choma beef</h3>
+                            <p>Authentic Kenyan grilled beef, seasoned with traditional spices and served with a side of roasted vegetables.</p>
+                            <span class="price-large">Ksh 4,400</span>
+                        </div>
+                    </div>
+                </aside>
+
+            </div>
+        </section>
+<!-- Reservations Form  -->
+        <section id="reservations" class="reservation-section">
+            <div class="container">
+                <div class="reservation-box">
+                    <h2>Book a Table with Us Today</h2>
+                    <form class="booking-form">
+                        <div class="form-group">
+                            <input id="fullName" type="text" placeholder="Full Name" autocomplete="name" required>
+                            <input id="email" type="email" placeholder="Email Address" autocomplete="email" required>
+                        </div>
+                        <div class="form-group">
+                            <input id="reservation-date" type="date" required>
+                            <input id="reservation-time" type="time" required>
+                            <select id="guests" required>
+                                <option value="" disabled selected>Number of Guests</option>
+                                <option value="1">1 Person</option>
+                                <option value="2">2 People</option>
+                                <option value="3">3 People</option>
+                                <option value="4">4 People</option>
+                                <option value="5+">5+ People</option>
+                            </select>
+                        </div>
+                        <button id="submitReservation" type="submit" class="btn-solid w-100">Confirm Reservation</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+<!-- Footer section  -->
+    <footer class="site-footer">
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <h3>Lexcy<span>.</span></h3>
+                <p>We are dedicated to providing an exceptional dining experience through passion and locally sourced ingredients all around Kenya.</p>
+            </div>
+            <div class="footer-contact">
+                <h4>Find Us</h4>
+                <p>254 Nairobi, Kenya<br>54 kenyatta Avenue</p>
+                <p>Reservations: +254 123-4567</p>
+            </div>
+            <div class="footer-hours">
+                <h4>Operating Hours</h4>
+                <p>Mon - Thu: 7:00 AM - 10:00 PM</p>
+                <p>Fri - Sat: 8:00 PM - 11:30 PM</p>
+                <p>Sunday: Closed</p>
+            </div>
+        </div>
+        <div class="container">
+            <div class="footer-bottom">
+                <p>&copy; 2026 Lexcy. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+<!-- External Javascript to manage the burger menu  -->
+    <script src="script.js"></script>
+</body>
+</html>

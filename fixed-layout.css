@@ -1,0 +1,47 @@
+/*  FIXED LAYOUT - Set to pixel values */
+.container { 
+    width: 1200px; 
+    margin: 0 auto; 
+}
+.site-header,
+.hero,
+.reservation-section,
+.site-footer { 
+    min-width: 1200px; 
+}
+.hamburger { 
+    display: none; 
+}
+.site-nav { 
+    display: flex; 
+}
+.content-split { 
+    display: flex; 
+    flex-direction: row; 
+    width: 1200px; 
+    gap: 40px; 
+}
+.lead-text {
+    max-width: 800px;
+}
+.menu-wrapper { 
+    width: 760px; 
+}
+.specials-wrapper { 
+    width: 400px; 
+}
+.menu-grid { 
+    display: grid; 
+    grid-template-columns: 365px 365px; 
+    gap: 30px; 
+}
+.form-group { 
+    display: grid; 
+    grid-template-columns: 530px 530px; 
+    gap: 40px; 
+}
+.footer-grid { 
+    display: grid; 
+    grid-template-columns: 520px 300px 300px; 
+    gap: 40px; 
+}

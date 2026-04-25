@@ -1,0 +1,107 @@
+/* Fluid base with an adaptive capping */
+.container { 
+    width: 90%; 
+    max-width: 1140px; 
+    margin: 0 auto; 
+}
+.menu-wrapper, 
+.specials-wrapper { 
+    display: flex; 
+    flex-direction: column; 
+}
+.content-split { 
+    display: flex; 
+    flex-direction: column; 
+    gap: 40px; 
+}
+.menu-grid { 
+    display: grid; 
+    gap: 30px; 
+    flex-grow: 1; 
+}
+.form-group { 
+    display: grid; 
+    grid-template-columns: 1fr; 
+    gap: 20px; 
+    margin-bottom: 20px; 
+}
+.footer-grid { 
+    display: grid; 
+    grid-template-columns: 1fr; 
+    gap: 40px; 
+    margin-bottom: 20px; 
+}
+.lead-text {
+    width: 100%;
+    max-width: 800px;
+}
+/* Mobile Menu Logics */
+@media screen and (max-width: 768px) {
+    .hamburger { 
+        display: flex; 
+        margin-left: auto; 
+    }
+    .site-nav { 
+        position: absolute; 
+        top: var(--header-height); 
+        left: -100%; 
+        width: 100%; 
+        background-color: var(--color-dark); 
+        transition: 0.4s ease-in-out; 
+        border-top: 1px solid #2D3748; 
+        flex-direction: column; 
+        justify-content: center; 
+        padding-bottom: 30px; 
+    }
+    .hero-content h1{
+        font-size: 30px;
+    }
+    .site-nav.active { 
+        left: 0; 
+    }
+    .nav-center-links { 
+        flex-direction: column; 
+        padding: 40px 0 25px 0; 
+        gap: 25px; 
+    }
+    .nav-btn { 
+        margin-left: 0; 
+        margin-bottom: 20px; 
+    }
+    .toggle span:nth-child(1) { 
+        transform: translateY(8px) rotate(45deg); 
+    }
+    .toggle span:nth-child(2) { 
+        opacity: 0; 
+    }
+    .toggle span:nth-child(3) { 
+        transform: translateY(-8px) rotate(-45deg); 
+    } 
+    .scalable-media { 
+        height: 240px; 
+    }
+}
+/* Desktop and Tablet */
+@media screen and (min-width: 769px) {
+    .hamburger { 
+        display: none; 
+    }
+    .content-split { 
+        flex-direction: row; 
+    }
+    .menu-wrapper { 
+        width: 65%; 
+    }
+    .specials-wrapper { 
+        width: 35%; 
+    }  
+    .menu-grid { 
+        grid-template-columns: 1fr 1fr; 
+    }  
+    .form-group { 
+        grid-template-columns: 1fr 1fr; 
+    }  
+    .footer-grid { 
+        grid-template-columns: 2fr 1fr 1fr; 
+    }
+}
